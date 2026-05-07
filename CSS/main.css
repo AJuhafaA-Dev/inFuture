@@ -20,3 +20,38 @@
   font-size: 48px;
   margin-left: 10px;
 }
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 96%;
+  margin: 0 auto;
+}
+.grid-div1,
+.grid-div2,
+.grid-div3 {
+  min-height: 250px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.grid-div-img {
+  width: 100%;
+  height: 100%;
+}
+.grid-div-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.grid-div-itemName {
+  width: 100%;
+  height: 35px;
+  font-size: 30px;
+  background-color: #000000;
+  color: white;
+}
