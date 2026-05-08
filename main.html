@@ -17,52 +17,66 @@
     <link rel="stylesheet" href="CSS/main.css" />
   </head>
   <body>
-    <div class="header-div">
-      <h1 class="header1">
-        <p class="header1-text">
-          <span class="header1-text-span1">in</span>Future
-        </p>
-      </h1>
-      <h2 class="header2">
-        <p class="header2-text">
-          <span class="header2-text-span1">Your</span> trash, in a
-          <span class="header2-text-span2">100</span> years.
-        </p>
-      </h2>
-    </div>
     <div class="main-div">
       <p class="main-text">
         CURRENT YEAR <span class="main-text-year">2026</span>
       </p>
     </div>
-    <div class="main-div2">
-      <p class="main-text-choose">Choose to see it's legacy:</p>
+    <div id="selection-screen" class="selection-screen">
+      <div class="header-div">
+        <h1 class="header1">
+          <p class="header1-text">
+            <span class="header1-text-span1">in</span>Future
+          </p>
+        </h1>
+        <h2 class="header2">
+          <p class="header2-text">
+            <span class="header2-text-span1">Your</span> trash, in a
+            <span class="header2-text-span2">100</span> years.
+          </p>
+        </h2>
+      </div>
+
+      <div class="main-div2">
+        <p class="main-text-choose">Choose to see it's legacy:</p>
+      </div>
+      <div class="main-grid">
+        <div class="grid-div1">
+          <div class="grid-div-img">
+            <img
+              src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
+            />
+          </div>
+          <div
+            class="grid-div-itemName"
+            onclick="cardclicked(120, `Plastic Bottle`)"
+          >
+            PLASTIC BOTTLE
+          </div>
+        </div>
+        <div class="grid-div2">
+          <div class="grid-div-img">
+            <img
+              src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
+            />
+          </div>
+          <div class="grid-div-itemName">PLASTIC BAG</div>
+        </div>
+        <div class="grid-div3">
+          <div class="grid-div-img">
+            <img
+              src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
+            />
+          </div>
+          <div class="grid-div-itemName">PLASTIC SMTH ELSE</div>
+        </div>
+      </div>
     </div>
-    <div class="main-grid">
-      <div class="grid-div1">
-        <div class="grid-div-img">
-          <img
-            src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
-          />
-        </div>
-        <div class="grid-div-itemName">PLASTIC BOTTLE</div>
-      </div>
-      <div class="grid-div2">
-        <div class="grid-div-img">
-          <img
-            src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
-          />
-        </div>
-        <div class="grid-div-itemName">PLASTIC BAG</div>
-      </div>
-      <div class="grid-div3">
-        <div class="grid-div-img">
-          <img
-            src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
-          />
-        </div>
-        <div class="grid-div-itemName">PLASTIC SMTH ELSE</div>
-      </div>
-    </div>
+    <div
+      id="plasticBottle-screen"
+      class="plasticBottle-screen"
+      style="display: none"
+    ></div>
+    <script src="Scripts/main.js"></script>
   </body>
 </html>
