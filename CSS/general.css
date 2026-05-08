@@ -5,8 +5,16 @@
     Arial,
     Helvetica,
     sans-serif;
+  color: var(--text-clr);
 }
 body {
   padding-bottom: 200px;
-  background-color: rgb(240, 241, 243);
+  background-color: var(--bg-clr);
+}
+:root {
+  --bg-clr: #0b0e14;
+  --primary-clr: #00d0ff;
+  --secondary-clr: #871d1d;
+  --text-clr: #e0e0e0;
+  --accent-clr: #ff4d4d;
 }

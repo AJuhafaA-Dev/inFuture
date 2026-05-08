@@ -1,0 +1,62 @@
+.plasticBottle-facts-div {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  row-gap: 60px;
+}
+.timeline-line {
+  grid-column: 2;
+  background-color: var(--accent-clr);
+  box-shadow: 0 0 15px #00d1ff;
+  width: 2px;
+  height: 136%;
+}
+.plasticBottle-factLeft {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+.plasticBottle-factLeft-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0px;
+  text-align: right;
+  margin-right: 15px;
+  color: var(--secondary-clr);
+}
+.plasticBottle-factLeft-text {
+  font-size: 30px;
+  overflow-wrap: break-word;
+  text-align: right;
+  margin-right: 15px;
+}
+.plasticBottle-factLeft-blank {
+  grid-column: 3;
+  font-size: 140px;
+  color: var(--accent-clr);
+  text-align: center;
+}
+.plasticBottle-factRight {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 3;
+}
+.plasticBottle-factRight-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0px;
+  text-align: left;
+  margin-left: 15px;
+  color: var(--secondary-clr);
+}
+.plasticBottle-factRight-text {
+  font-size: 30px;
+  overflow-wrap: break-word;
+  text-align: left;
+  margin-left: 15px;
+}
+.plasticBottle-factRight-blank {
+  grid-column: 1;
+  font-size: 140px;
+  color: var(--accent-clr);
+  text-align: center;
+}
