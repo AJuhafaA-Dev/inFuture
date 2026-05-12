@@ -62,3 +62,11 @@
   background-color: var(--secondary-clr);
   color: var(--text-clr);
 }
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-text-choose {
+    margin: -10px 0px 50px 8px;
+  }
+}

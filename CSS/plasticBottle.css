@@ -1,7 +1,9 @@
+/*Here, by plsaztic bottle, it most likely means any trash, if time is left - fix it*/
 .plasticBottle-facts-div {
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
-  row-gap: 60px;
+  row-gap: 38px;
+  align-items: center;
 }
 .timeline-line {
   grid-column: 2;
@@ -59,4 +61,33 @@
   font-size: 140px;
   color: var(--accent-clr);
   text-align: center;
+}
+@media (max-width: 740px) {
+  .timeline-line {
+    height: 138%;
+  }
+  .plasticBottle-factLeft-title {
+    font-size: 28px;
+    margin: 5px 0px;
+    margin-right: 4px;
+  }
+  .plasticBottle-factRight-title {
+    font-size: 28px;
+    margin: 5px 0px;
+    margin-left: 4px;
+  }
+  .plasticBottle-factLeft-text {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  .plasticBottle-factRight-text {
+    font-size: 16px;
+    margin-left: 4px;
+  }
+  .plasticBottle-factLeft-blank {
+    font-size: 60px;
+  }
+  .plasticBottle-factRight-blank {
+    font-size: 60px;
+  }
 }

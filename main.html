@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="CSS/plasticBottle.css" />
   </head>
   <body>
+    <div><button class="home-btn" onclick="goHome()">Home</button></div>
     <div id="selection-screen" class="selection-screen">
       <div class="header-div">
         <h1 class="header1">
@@ -39,7 +40,7 @@
         </p>
       </div>
       <div class="main-div2">
-        <p class="main-text-choose">Choose to see it's legacy:</p>
+        <p class="main-text-choose">Choose to see it's legacy</p>
       </div>
       <div class="main-grid">
         <div class="grid-div1">
@@ -48,34 +49,100 @@
               src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
             />
           </div>
-          <div
-            class="grid-div-itemName"
-            onclick="cardclicked(120, `Plastic Bottle`)"
-          >
+          <div class="grid-div-itemName" onclick="cardclicked()">
             PLASTIC BOTTLE
           </div>
         </div>
         <div class="grid-div2">
           <div class="grid-div-img">
-            <img
-              src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
-            />
+            <img src="Pics/white_bag.jpg" />
           </div>
-          <div class="grid-div-itemName">PLASTIC BAG</div>
+          <div class="grid-div-itemName" onclick="cardclicked2()">
+            PLASTIC BAG
+          </div>
         </div>
         <div class="grid-div3">
           <div class="grid-div-img">
-            <img
-              src="Pics/crushed-clear-plastic-bottle-waste-260nw-2744627741.webp"
-            />
+            <img src="Pics/green_glass_bottle.jfif" />
           </div>
-          <div class="grid-div-itemName">PLASTIC SMTH ELSE</div>
+          <div class="grid-div-itemName" onclick="cardclicked3()">
+            PLASTIC SMTH ELSE
+          </div>
         </div>
       </div>
     </div>
+    <!---...................................................-->
     <div
       id="plasticBottle-screen"
-      class="plasticBottle-screen"
+      class="plasticBottle-screen item-screen"
+      style="display: none"
+    >
+      <div id="main-div " class="main-div">
+        <p class="main-text">
+          CURRENT YEAR
+          <span id="main-text-year" class="main-text-year">2026</span>
+        </p>
+      </div>
+      <div class="plasticBottle-facts-div">
+        <div class="plasticBottle-factLeft L">
+          <p class="plasticBottle-factLeft-title L">
+            The Eternal Legacy of the Plastic Bottle
+          </p>
+          <p class="plasticBottle-factLeft-text L">
+            By the year 2107, the bottle you threw away today has outlived your
+            children and grandchildren. It’s still sitting in a landfill,
+            perfectly intact.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factLeft-blank L">2107</div>
+        <div class="plasticBottle-factRight-blank R">2250</div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factRight R">
+          <p class="plasticBottle-factRight-title R">Chemical Warfare</p>
+          <p class="plasticBottle-factRight-text R">
+            The structural integrity of the PET plastic has failed. It is now
+            leaching Bisphenol A (BPA) and phthalates into the soil, creating a
+            "dead zone" where local plants can no longer grow.
+          </p>
+        </div>
+        <div class="plasticBottle-factLeft L">
+          <p class="plasticBottle-factLeft-title L">The Great Fragmentation</p>
+          <p class="plasticBottle-factLeft-text L">
+            High heat and UV rays have turned the bottle brittle. A heavy
+            monsoon has washed the pieces into the Bay of Bengal. It isn't gone;
+            it has just become millions of jagged, sharp shards floating in our
+            water.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factLeft-blank L">2380</div>
+        <div class="plasticBottle-factRight-blank R">2490</div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factRight R">
+          <p class="plasticBottle-factRight-title R">Micro-Invaders</p>
+          <p class="plasticBottle-factRight-text R">
+            The bottle is now invisible to the human eye. It has become
+            microplastics. These tiny particles are now being consumed by fish
+            and are officially entering the human food chain.
+          </p>
+        </div>
+        <div class="plasticBottle-factLeft L">
+          <p class="plasticBottle-factLeft-title L">500 Years of Solitude</p>
+          <p class="plasticBottle-factLeft-text L">
+            Half a millennium has passed. While the "bottle" is finally gone,
+            its carbon polymers still exist. Every single plastic bottle ever
+            manufactured still exists on Earth in some form today.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factLeft-blank L">2526</div>
+      </div>
+    </div>
+    <!--..................................................-->
+    <div
+      id="plasticBag-screen"
+      class="plasticBag-screen item-screen"
       style="display: none"
     >
       <div id="main-div " class="main-div">
@@ -86,58 +153,112 @@
       </div>
       <div class="plasticBottle-facts-div">
         <div class="plasticBottle-factLeft">
-          <p class="plasticBottle-factLeft-title">
-            The Eternal Legacy of the Plastic Bottle
-          </p>
+          <p class="plasticBottle-factLeft-title">The Tangle</p>
           <p class="plasticBottle-factLeft-text">
-            By the year 2107, the bottle you threw away today has outlived your
-            children and grandchildren. It’s still sitting in a landfill,
-            perfectly intact.
+            The bag is caught in the roots of a tree. It prevents new shoots
+            from growing, slowly suffocating the local greenery.
           </p>
         </div>
         <div class="timeline-line"></div>
-        <div class="plasticBottle-factLeft-blank">2107</div>
-        <div class="plasticBottle-factRight-blank">2250</div>
+        <div class="plasticBottle-factLeft-blank">2035</div>
+        <div class="plasticBottle-factRight-blank">2040</div>
         <div class="timeline-line"></div>
         <div class="plasticBottle-factRight">
-          <p class="plasticBottle-factRight-title">
-            Chemical Warfare
-          </p>
+          <p class="plasticBottle-factRight-title">Shredded</p>
           <p class="plasticBottle-factRight-text">
-            The structural integrity of the PET plastic has failed. It is now leaching Bisphenol A (BPA) and phthalates into the soil, creating a "dead zone" where local plants can no longer grow.
+            Wind and sun have torn it into strips. These strips are now "ghost
+            traps" for small animals.
           </p>
         </div>
         <div class="plasticBottle-factLeft">
-          <p class="plasticBottle-factLeft-title">
-           The Great Fragmentation
-          </p>
+          <p class="plasticBottle-factLeft-title">Micro-Dust</p>
           <p class="plasticBottle-factLeft-text">
-            High heat and UV rays have turned the bottle brittle. A heavy monsoon has washed the pieces into the Bay of Bengal. It isn't gone; it has just become millions of jagged, sharp shards floating in our water.
+            The bag has crumbled into "plastic snow." It’s so light it’s being
+            carried by the wind into our homes.
           </p>
         </div>
         <div class="timeline-line"></div>
-        <div class="plasticBottle-factLeft-blank">2380</div>
-        <div class="plasticBottle-factRight-blank">2490</div>
+        <div class="plasticBottle-factLeft-blank">2044</div>
+        <div class="plasticBottle-factRight-blank">2046</div>
         <div class="timeline-line"></div>
         <div class="plasticBottle-factRight">
-          <p class="plasticBottle-factRight-title">
-            Micro-Invaders
-          </p>
+          <p class="plasticBottle-factRight-title">Soil Saturation</p>
           <p class="plasticBottle-factRight-text">
-            The bottle is now invisible to the human eye. It has become microplastics. These tiny particles are now being consumed by fish and are officially entering the human food chain.
+            The plastic particles are now mixed with the earth. Farmers' crops
+            are now growing in "plastic-enriched" soil.
           </p>
         </div>
         <div class="plasticBottle-factLeft">
-          <p class="plasticBottle-factLeft-title">
-           500 Years of Solitude
-          </p>
+          <p class="plasticBottle-factLeft-title">20-Year Mark</p>
           <p class="plasticBottle-factLeft-text">
-            Half a millennium has passed. While the "bottle" is finally gone, its carbon polymers still exist. Every single plastic bottle ever manufactured still exists on Earth in some form today.
+            It only took 1 second to throw away, but 20 years later, it’s still
+            part of the food chain.
           </p>
         </div>
         <div class="timeline-line"></div>
-        <div class="plasticBottle-factLeft-blank">2526</div>
+        <div class="plasticBottle-factLeft-blank">2046</div>
       </div>
+    </div>
+    <!--..................................................-->
+    <div
+      id="glass-bottle-screen"
+      class="glass-bottle-screen item-screen"
+      style="display: none"
+    >
+      <div id="main-div " class="main-div">
+        <p class="main-text">
+          CURRENT YEAR
+          <span id="main-text-year" class="main-text-year">2026</span>
+        </p>
+      </div>
+      <div class="plasticBottle-facts-div">
+        <div class="plasticBottle-factLeft">
+          <p class="plasticBottle-factLeft-title">Still Intact</p>
+          <p class="plasticBottle-factLeft-text">
+            1,000 years later. Humanity might look different, but this bottle
+            looks exactly like the day you bought it.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factLeft-blank">3026</div>
+        <div class="plasticBottle-factRight-blank">50,000</div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factRight">
+          <p class="plasticBottle-factRight-title">The Smooth Surfaces</p>
+          <p class="plasticBottle-factRight-text">
+            The edges are finally starting to round out due to friction with
+            sand. It’s now a "sea glass" relic.
+          </p>
+        </div>
+        <div class="plasticBottle-factLeft">
+          <p class="plasticBottle-factLeft-title">Deep Burial</p>
+          <p class="plasticBottle-factLeft-text">
+            t’s buried kilometers underground. It’s becoming a "technofossil"—a
+            permanent part of the Earth's crust.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factLeft-blank">250,000</div>
+        <div class="plasticBottle-factRight-blank">750,000</div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factRight">
+          <p class="plasticBottle-factRight-title">The Shard</p>
+          <p class="plasticBottle-factRight-text">
+            It has finally cracked into smaller pieces, but the chemical
+            structure of glass refuses to break down.
+          </p>
+        </div>
+        <div class="plasticBottle-factLeft">
+          <p class="plasticBottle-factLeft-title">One Million Years</p>
+          <p class="plasticBottle-factLeft-text">
+            It has outlasted civilizations. It is quite literally the most
+            permanent thing humans have ever created.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="plasticBottle-factLeft-blank">1,026,026</div>
+      </div>
+    </div>
     <script src="Scripts/main.js"></script>
   </body>
 </html>

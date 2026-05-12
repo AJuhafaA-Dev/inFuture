@@ -7,7 +7,7 @@
   font-weight: bold;
   text-align: center;
   color: var(--primary-clr);
-  margin: 48px 0px;
+  margin: 64px 0px;
 }
 .header1-text-span1 {
   color: var(--primary-clr);
@@ -29,4 +29,30 @@
   color: var(--accent-clr);
   font-weight: 300;
   font-family: Arial, Helvetica, sans-serif;
+}
+.home-btn {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  padding: 10px 20px;
+  background: var(--bg-clr);
+  border: 2px solid var(--accent-clr);
+  color: var(--accent-clr);
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.home-btn:hover {
+  background: #ff4d4d;
+  color: #0b0e14;
+  box-shadow: 0 0 20px #ff4d4d;
+}
+@media (max-width: 740px) {
+  .home-btn {
+    top: 10px;
+    left: 10px;
+  }
 }
