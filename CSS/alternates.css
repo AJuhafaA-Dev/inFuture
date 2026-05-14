@@ -6,6 +6,11 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
+  margin-top: 73px;
+  border: 2px dashed var(--secondary-clr);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 .alternate-screen-title-text {
@@ -13,18 +18,45 @@
   color: var(--primary-clr);
   font-size: 58px;
   font-weight: bold;
-  margin-bottom: -5px;
 }
 .alternate-screen-tagline-text {
   font-size: 34px;
   font-weight: normal;
   text-align: center;
-  color: var(--accent-clr);
+  color: var(--text-clr);
+  margin-top: -10px;
   margin-bottom: 15px;
 }
 .alternate-screen-tagline-text2 {
   font-size: 34px;
   font-weight: normal;
   text-align: center;
+  color: var(--text-clr);
+  margin-bottom: 20px;
+}
+.s-a {
   color: var(--accent-clr);
+}
+.s-s {
+  color: var(--secondary-clr);
+}
+.s-b {
+  color: var(--primary-clr);
+}
+.alternate-screen-main-item {
+  margin-left: 14px;
+}
+.alternate-screen-main-itemName {
+  font-size: 44px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--accent-clr);
+}
+.alternate-screen-main-item-description {
+  font-size: 26px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 15px;
 }
