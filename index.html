@@ -12,10 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/general.css" />
-    <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/plasticBottle.css" />
+    <link rel="stylesheet" href="CSS/alternates.css" />
   </head>
   <body>
     <div><button class="home-btn" onclick="goHome()">Home</button></div>
@@ -132,7 +133,7 @@
         <div class="timeline-line"></div>
         <div class="plasticBottle-factLeft-blank L">2526</div>
       </div>
-      <div class="suggestion">
+      <div class="suggestion" onclick="suggestion('plasticBottle-screen')">
         <p>
           Instead of single-use plastic bottles, use reusable metal bottles.
         </p>
@@ -257,6 +258,22 @@
         <div class="timeline-line"></div>
         <div class="plasticBottle-factLeft-blank">1,026,026</div>
       </div>
+    </div>
+    <div class="alternate-screen" style="display: none" id="alternate-screen">
+      <div class="alternate-screen-header">
+        <div class="alternate-screen-title">
+          <p class="alternate-screen-title-text">Choose Your Legacy</p>
+        </div>
+        <div class="alternate-screen-tagline">
+          <p class="alternate-screen-tagline-text">
+            The world stays the same, but your impact changes.
+          </p>
+          <p class="alternate-screen-tagline-text2">
+            Swap the permanent for the sustainable.
+          </p>
+        </div>
+      </div>
+      <div class="alternate-screen-chart-grid"></div>
     </div>
     <script src="Scripts/main.js"></script>
   </body>

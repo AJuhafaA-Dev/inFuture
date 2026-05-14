@@ -18,8 +18,13 @@ function goHome() {
   screens.forEach((screen) => {
     screen.style.display = "none";
   });
+  document.getElementById("alternate-screen").style.display = "none";
 
   document.getElementById("selection-screen").style.display = "block";
 
   window.scrollTo(0, 0);
+}
+function suggestion(id) {
+  document.getElementById(`${id}`).style.display = "none";
+  document.getElementById("alternate-screen").style.display = "block";
 }

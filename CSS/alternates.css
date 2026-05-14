@@ -1,0 +1,30 @@
+.alternate-screen {
+  display: grid;
+}
+.alternate-screen-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.alternate-screen-title-text {
+  text-align: center;
+  color: var(--primary-clr);
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+.alternate-screen-tagline-text {
+  font-size: 34px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--accent-clr);
+  margin-bottom: 15px;
+}
+.alternate-screen-tagline-text2 {
+  font-size: 34px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--accent-clr);
+}
