@@ -60,3 +60,17 @@
   grid-template-rows: 1fr;
   gap: 15px;
 }
+.placeholder {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 140px;
+  color: var(--secondary-clr);
+}
+.smth {
+  color: var(--secondary-clr);
+}
+@media (max-width: 650px) {
+  .placeholder {
+    font-size: 90px;
+  }
+}
