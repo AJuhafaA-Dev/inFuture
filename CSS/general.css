@@ -1,17 +1,20 @@
 * {
   margin: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: var(--text-clr);
+}
+body {
+  padding-bottom: 50px;
+  background-color: var(--bg-clr);
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.sf {
   font-family:
     Supermercado One,
     Arial,
     Helvetica,
     sans-serif;
-  color: var(--text-clr);
-}
-body {
-  padding-bottom: 200px;
-  background-color: var(--bg-clr);
-  overflow-x: hidden;
-  max-width: 100%;
 }
 :root {
   --bg-clr: #0b0e14;
